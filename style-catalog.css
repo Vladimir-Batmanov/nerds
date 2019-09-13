@@ -10,6 +10,24 @@ body {
   
 }
 
+
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0;
+}
+
+.container2 {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 header {
   padding: 49px 0 0 0;
   background-color: #eeeeee;
