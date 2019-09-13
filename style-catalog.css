@@ -10,35 +10,13 @@ body {
   
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.content-flex {
-  display: flex;
-  justify-content: space-between;
-  padding: 55px 0;
-}
-
-.container2 {
-  width: 1440px;
-  margin: 0 auto;
-}
-
 header {
+  padding: 49px 0 0 0;
   background-color: #eeeeee;
 }
 
 .header-logo {
-  margin: 49px 0 0 0;
-  float: left;
+  display: block;
   width: 160px;
   height: 65px;
 }
@@ -48,38 +26,30 @@ header {
   height: 65px;
 }
 
-.header-logo img:hover {
-  width: 160px;
-  height: 65px;
-  opacity: 0.8;
-  transition: opacity 0.6s ease-in-out;
-}
-
-.header-logo img:active {
-  width: 160px;
-  height: 65px;
-  opacity: 0.3;
-  transition: opacity 0.6s ease-in-out;
-}
-
 .main-nav {
-  float: left;
-  width: 640px;
+  display: flex;
+  width: 1160px;
   margin: 0;
-  margin-top: 83px;
-  margin-left: 150px;
   padding: 0;
+  
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 25px 20px 0;
+  width: 800px;
   list-style: none;
 }
 
-
-.main-nav li {
-  float: left;
+.nav-list li {
   margin-left: 45px;
   text-transform: uppercase;
 }
 
-.main-nav li:first-child {
+.nav-list li:first-child {
   margin-left: 70px;
 }
 
@@ -88,28 +58,23 @@ header {
   text-decoration: none;
 }
 
-.main-nav a:hover {
+.nav-list a:hover {
   color:#fb565a;
   transition: color 0.5s linear;
 }
 
-.main-nav .shop:hover {
-  color: #000;
-}
-
-.main-nav a:active {
+.nav-list a:active {
   color: rgba(0, 0, 0, 0.3);
   transition: color 0.5s linear;
 }
 
 .basket {
-  display: inline-block;
+  padding: 25px 0 0 0;
+  width: 160px;
   font: inherit;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
-  float: right;
-  margin-top: 83px;
+  text-align: right;
 }
 
 .basket:hover {
@@ -119,7 +84,6 @@ header {
 
 .basket:active {
   color: rgba(0, 0, 0, 0.3);
-  transition: color 0.5s linear;
 }
 
 .basket::before {
